@@ -1,0 +1,15 @@
+.SmsInbox {
+	border: 1px solid blue;
+	width: 35%;
+}
+
+.SmsInbox .Header {
+  border-bottom: 1px solid blue;
+  padding: 8px 2%;
+}
+
+.SmsInbox .Body {
+  border-bottom: 1px solid blue;
+  padding: 8px 2%;
+}
+
