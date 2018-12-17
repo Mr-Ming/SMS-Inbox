@@ -1,14 +1,48 @@
 .SmsInbox {
-	border: 1px solid blue;
-	width: 35%;
+  color: #035959;
+  border: 1px solid #9fc4f9;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 35%;
 }
 
 .SmsInbox .Header {
-  border-bottom: 1px solid blue;
+  background-color: #e6f9c2;
+  border-bottom: 1px solid #9fc4f9;
   padding: 8px 2%;
 }
 
 .SmsInbox .Body {
-  padding: 8px 2%;
+  padding-top: 15px;
+  padding-right: 2%;
+  padding-bottom: 8px;
+  padding-left: 2%;
 }
 
+.SmsInbox .Message {
+  cursor: pointer;
+  overflow: auto;
+}
+
+.SmsInbox .Message:not(:last-child) {
+  border-bottom: 1px solid #9fc4f9;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.SmsInbox .Avatar {
+  background-image: url(/static/media/sms-alert.2eb295ab.ico);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 79px;
+  float: left;
+}
+
+.SmsInbox .Bold {
+  font-weight: bold;
+}
+
+.SmsInbox .Content {
+  float: left;
+}

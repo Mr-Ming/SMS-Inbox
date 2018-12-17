@@ -1,25 +1,37 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SmsInbox from './components/SmsInbox.js';
+import './stylesheets/App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: {},
+    };
+  }
+
+  componentDidMount() {
+    this.getTextMessage();
+  }
+
+  getTextMessage = () => {
+    fetch('http://localhost:8080/api')
+      .then(response => response.json())
+      .then(response => {
+        this.setState({
+          data: response
+        });
+      })
+  }
+
   render() {
+    const { data } = this.state;
+
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <SmsInbox
+          data={data}
+        />
       </div>
     );
   }
