@@ -18,5 +18,5 @@ The api endpoint it pulls data from:
 ## To Run The Program
 1. Clone this branch
 2. CD into its directory
-3. `Run npm install && npm start`
+3. Run `npm install && npm start`
 
