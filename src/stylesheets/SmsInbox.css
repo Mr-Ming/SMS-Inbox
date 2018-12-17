@@ -2,10 +2,12 @@
   color: #035959;
   border: 1px solid #9fc4f9;
   border-radius: 10px;
+  overflow: hidden;
   width: 35%;
 }
 
 .SmsInbox .Header {
+  background-color: #e6f9c2;
   border-bottom: 1px solid #9fc4f9;
   padding: 8px 2%;
 }
