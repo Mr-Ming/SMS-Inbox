@@ -1,5 +1,5 @@
 # SMS-Inbox
-The SMS Inbox provides a interfacing for viewing SMS
+The SMS Inbox provides a interface for viewing SMS
 
 The interface:
 
