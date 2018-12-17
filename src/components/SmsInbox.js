@@ -76,7 +76,7 @@ class SmsInbox extends Component {
         unreadMessage: unreadMessage - 1
       })
 
-      console.log("Calling Mark Message Unread for ID: " + item.id);
+      console.log("Calling Mark Message read for ID: " + item.id);
     } else {
       newTextMessages.items[i].is_new = true;
 

@@ -31,7 +31,7 @@
 }
 
 .SmsInbox .Avatar {
-  background-image: url(/static/media/sms-alert.2eb295ab.ico);
+  background-image: url('sms-alert.ico');
   background-position: 0 0;
   background-repeat: no-repeat;
   width: 70px;
